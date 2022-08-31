@@ -12,6 +12,7 @@ body{
 
 header{
     height: 10vh;
+    padding: 0px 10px;
     background-color: brown;
     display: flex;
     align-items: center;
@@ -27,6 +28,13 @@ ul{
     display: flex;
     list-style: none;
     gap: 20px;
+}
+
+li{
+    background-color: #df36a8;
+    padding: 5px;
+    font-weight: bold;
+
 }
 
 a{
@@ -99,7 +107,7 @@ label{
     display: block;
     font-weight: bold;
     font-size: 20px;
-    
+
 }
 
 input{
