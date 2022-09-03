@@ -60,6 +60,7 @@ main{
 
 #left{
     width: 65%;
+    border-right: .5px solid rgb(255, 255, 255);
 }
 
 article{
@@ -77,6 +78,7 @@ article{
 h2{
     text-align: center;
     margin: 10px 0px;
+    padding: 2px ;
     font-size: 50px;
 }
 
@@ -87,7 +89,7 @@ h3{
 }
 
 p{
-    text-align: center;
+    text-align: justify;
     font-size: 20px;
 }
 
