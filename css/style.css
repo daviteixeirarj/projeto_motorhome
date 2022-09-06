@@ -59,6 +59,7 @@ main{
 }
 
 #left{
+    background-color: #8a6c3e;
     width: 65%;
     border-right: .5px solid rgb(255, 255, 255);
 }
@@ -76,24 +77,29 @@ article{
 }
 
 h2{
+    background-color: #652adf;
     text-align: center;
     margin: 10px 0px;
     padding: 2px;
-    font-size: 50px;
+    font-size: 5vw;
 }
 
 h3{
+    display: block;
+    background-color: #35cadf;
     text-align: center;
     margin: 5px 0px;
-    font-size: 30px;
+    font-size: 2vw;
 }
 
 p{
+    background-color: #6f2b4d;
     text-align: justify;
-    font-size: 20px;
+    font-size: 1.5vw;
 }
 
 #right{
+    background-color: #d4a1c3;
     width: 35%;
     padding: 5px;
     
