@@ -10,11 +10,11 @@
 
 /*class = "efeito-vidro"*/
 .efeito-vidro {
-    background: rgba( 255, 255, 255, 0.35 );
+    background: rgba(88, 88, 88, 0.35);
     box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.404);
     backdrop-filter: blur(3.55px);
     -webkit-backdrop-filter: blur( 3.55px );
-    border: .5px solid rgb(255, 255, 255);
+    border: none
 }
 
 body{
@@ -43,7 +43,6 @@ ul{
 li{
     padding: 5px;
     font-weight: bold;
-
 }
 
 a{
@@ -54,21 +53,17 @@ main{
     height: 80vh;
     margin: 5vh;
     display: flex;
-    gap: 10px;
-    padding: 10px;
+
 }
 
 #left{
-    background-color: #8a6c3e;
     width: 65%;
-    border-right: .5px solid rgb(255, 255, 255);
 }
 
 article{
-    margin: 0 auto;
+    margin: auto;
     height: 100%;
-    max-width: 90%;
-    padding: 5px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -77,29 +72,26 @@ article{
 }
 
 h2{
-    background-color: #652adf;
     text-align: center;
-    margin: 10px 0px;
-    padding: 2px;
-    font-size: 5vw;
+    margin: 0 auto;
+    font-size: max(35px, 5vw);
 }
 
 h3{
-    display: block;
-    background-color: #35cadf;
     text-align: center;
-    margin: 5px 0px;
-    font-size: 2vw;
+    margin: 0 auto;
+    padding: 0 5px;
+    font-size: max(20px, 2vw);
 }
 
 p{
-    background-color: #6f2b4d;
-    text-align: justify;
-    font-size: 1.5vw;
+    text-align: center;
+    margin: 0 auto;
+    font-size: max(15px, 1.5vw);
+    padding: 0 10px;
 }
 
 #right{
-    background-color: #d4a1c3;
     width: 35%;
     padding: 5px;
     
@@ -116,7 +108,7 @@ form{
 label{
     display: block;
     font-weight: bold;
-    font-size: 20px;
+    font-size: max(20px, 2vw);
 
 }
 
@@ -134,9 +126,11 @@ input:focus, input:active{
 
 button{
     background-color: transparent;
+    margin: auto;
     margin-top: 50px;
+    width: 80%;
     height: 50px;
-    font-size: 30px;
+    font-size: max(17px, 2vw);
     border: 0.5px solid #fff;
     transition: .6s;
 }
@@ -144,4 +138,47 @@ button{
 button:hover{
     background-color: #fff;
     color: rgb(126, 126, 126);
+}
+
+/*Menu hamburguer*/
+@media only screen and (max-width: 514px){
+    ul{
+        display: none;
+    }
+    
+}
+
+@media only screen and (max-width: 659px){
+    main{
+        margin: 30px 0px;
+        width: 100%;
+    }
+
+    body{
+        background-attachment: fixed;
+    }
+
+    main{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #right, #left{
+        width: auto;
+    }
+
+    form{
+        margin-top: 10px;
+    }
+}
+
+/*480-767*/
+@media only screen and (max-width: 767px){
+    
+}
+
+/*768-1023*/
+@media only screen and (max-width: 023px){
+    
 }
