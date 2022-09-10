@@ -105,6 +105,10 @@ form{
     padding: 10px;
 }
 
+#item-form{
+    cursor: pointer;
+}
+
 label{
     display: block;
     font-weight: bold;
@@ -120,7 +124,7 @@ input{
     border-bottom: 0.5px solid #fff;
 }
 
-input:focus, input:active{
+input:focus{
     border: none;
 }
 
