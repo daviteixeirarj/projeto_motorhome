@@ -34,6 +34,24 @@ header{
     border: none;
 }
 
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hamburguer{
+    display: none;
+}
+
+span{
+    width: 25px;
+    height: 3px;
+    display: block;
+    background-color: #fff;
+    margin-bottom: 5px;
+}
+
 img{
     height: 15vh;
 }
@@ -139,7 +157,6 @@ input{
     outline: none;
     border-bottom: 0.5px solid #fff;
     font-size: 2vw;
-
 }
 
 input:focus{
@@ -163,9 +180,55 @@ button:hover{
 }
 
 /*Menu hamburguer*/
-@media only screen and (max-width: 514px){
+@media only screen and (max-width: 566px){
+    
+    #hamburguer{
+        display: block;
+    }
+    
     ul{
-        display: none;
+        position: absolute;
+        top: 10vh;
+        right: 0;
+        z-index: 1;
+        flex-direction: column;
+        gap: 0;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+
+        background: rgb(88, 88, 88);
+        box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.404);
+        backdrop-filter: blur(3.55px);
+        -webkit-backdrop-filter: blur( 3.55px );
+        border: none;
+
+        transform: translateX(100%);
+            
+    }
+
+    ul .active{
+        transform: rotateX(0);
+    }
+
+    li{
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+        transition: .4s;
+    }
+
+    li:hover{
+        background-color: rgb(173, 173, 173);
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+
+    main{
+        position: absolute;
+        z-index: -1;
     }
     
 }
