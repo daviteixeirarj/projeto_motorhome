@@ -34,7 +34,7 @@ header{
     border: none;
 }
 
-nav{
+.menu{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,7 +56,7 @@ img{
     height: 15vh;
 }
 
-ul{
+#menu-itens{
     display: flex;
     list-style: none;
     gap: 20px;
@@ -180,13 +180,13 @@ button:hover{
 }
 
 /*Menu hamburguer*/
-@media only screen and (max-width: 566px){
+@media only screen and (max-width: 950px){
     
     #hamburguer{
         display: block;
     }
     
-    ul{
+    #menu-itens{
         position: absolute;
         top: 10vh;
         right: 0;
@@ -207,7 +207,7 @@ button:hover{
             
     }
 
-    ul .active{
+    #menu-itens .active{
         transform: rotateX(0);
     }
 
@@ -266,6 +266,6 @@ button:hover{
 }
 
 /*768-1023*/
-@media only screen and (max-width: 023px){
+@media only screen and (max-width: 1023px){
     
 }
