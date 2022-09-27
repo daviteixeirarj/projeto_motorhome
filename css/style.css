@@ -7,6 +7,7 @@
     text-shadow: 10px;
 }
 
+
 /*class = "efeito-vidro"*/
 .efeito-vidro {
     background: rgba(88, 88, 88, 0.35);
@@ -56,26 +57,17 @@ img{
 }
 
 #menu-itens{
-    height: 100%;
     display: flex;
     list-style: none;
+    gap: 20px;
 }
 
 li{
-    height: 100%;
-    padding: 10px;
-    padding-top: 10px;
+    padding: 5px;
     font-weight: bold;
-    transition: .3s;
-}
-
-li:hover{
-    height: 100%;
-    background-color: rgb(194, 192, 192);
 }
 
 a{
-    height: 100%;
     text-decoration: none;
 }
 
@@ -83,6 +75,7 @@ main{
     height: 80vh;
     margin: 5vh;
     display: flex;
+
 }
 
 #left{
@@ -147,7 +140,6 @@ label{
     display: block;
     font-weight: normal;
     font-size: max(20px, 2vw);
-    cursor: pointer;
     transition: .5s;
 }
 
@@ -185,7 +177,6 @@ button{
 button:hover{
     background-color: #fff;
     color: rgb(126, 126, 126);
-    cursor: pointer;
 }
 
 /*Menu hamburguer*/
@@ -193,7 +184,6 @@ button:hover{
     
     #hamburguer{
         display: block;
-        cursor: pointer;
     }
     
     #menu-itens{
@@ -202,6 +192,7 @@ button:hover{
         right: 0;
         z-index: 1;
         flex-direction: column;
+        gap: 0;
         align-items: center;
         width: 100vw;
         height: 100vh;
@@ -212,7 +203,8 @@ button:hover{
         -webkit-backdrop-filter: blur( 3.55px );
         border: none;
 
-        transform: translateX(100%);            
+        transform: translateX(100%);
+            
     }
 
     #menu-itens .active{
