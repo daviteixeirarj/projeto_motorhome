@@ -181,6 +181,10 @@ button:hover{
 
 /*Menu hamburguer*/
 @media only screen and (max-width: 950px){
+
+    body{
+        height: 100vh;
+    }
     
     #hamburguer{
         display: block;
