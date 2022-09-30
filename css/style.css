@@ -237,8 +237,9 @@ input:focus{
     }
 
     #hamburguer{
+        display: block;
         width: 20px;
-        border-top: 2px solid #fff;
+        border-top: 2px solid;
     }
 
     #hamburguer::after,
@@ -247,7 +248,7 @@ input:focus{
         display: block;
         width: 20px;
         height: 2px;
-        background-color: #fff;
+        background-color: currentColor;
         margin-top: 5px;
     }
 }
