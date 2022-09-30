@@ -34,10 +34,6 @@ header{
     border: none;
 }
 
-#hamburguer{
-    display: none;
-}
-
 span{
     width: 25px;
     height: 3px;
@@ -50,21 +46,20 @@ img{
     height: 15vh;
 }
 
-#menu{
+#nav{
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#menu-itens{
+#menu{
     height: 100%;
-    display: inline-block;
     display: flex;
     list-style: none;
 }
 
-.menu-item{
+#menu a{
     padding: 5px;
     font-weight: bold;
     display: inline-block;
@@ -72,12 +67,16 @@ img{
     line-height: 68.3906px;
     text-decoration: none;
     padding: 0px 15px;
-    transition: .6s;
 }
 
-.menu-item:hover, li:hover{
+#btn-mobile{
+    display: none;
+}
+
+li:hover, a:hover{
     background-color: #fff;
     color: rgb(126, 126, 126);
+    transition: .5s;
 }
 
 main{
@@ -172,7 +171,7 @@ input:focus{
     border: none;
 }
 
-button{
+#submit{
     background-color: transparent;
     margin: auto;
     margin-top: 50px;
@@ -183,10 +182,72 @@ button{
     transition: .6s;
 }
 
-button:hover{
+#submit:hover{
     background-color: #fff;
-    color: rgb(126, 126, 126);
+    color: #7e7e7e;
 }
 
-/*Largura de tela (max-width: 961)*/
+/*Largura de tela (max-width: 1000)*/
+@media (max-width: 1000px) {
+    main{
+        position: absolute;
+        z-index: -1;
+    }
 
+    #menu{
+        display: block;
+        position: absolute;
+        top: 10vh;
+        right: 0px;
+        width: 100%;
+        margin: 0 auto;
+        height: 0px;
+        z-index: 1000;
+        background-color: #7e7e7e;
+        visibility: hidden;
+        overflow: hidden;
+        transition: .3s;
+    }
+
+    #nav.active #menu{
+        height: calc(90vh);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    li, a{
+        text-align: center;
+        width: 100%;
+    }
+
+    li:hover,
+    a:hover{
+        color: #7e7e7e;
+    }
+
+    #btn-mobile{
+        display: flex;
+        gap: 5px;
+        padding: 5px 10px;
+        background-color: transparent;
+        border: none;
+        font-size: max(17px, 1.5vw);
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    #hamburguer{
+        width: 20px;
+        border-top: 2px solid #fff;
+    }
+
+    #hamburguer::after,
+    #hamburguer::before{
+        content: ' ';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background-color: #fff;
+        margin-top: 5px;
+    }
+}
