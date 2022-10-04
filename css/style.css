@@ -38,9 +38,56 @@ img{
     height: 15vh;
 }
 
+#nav{
+    height: 100%;
+    padding: 0px 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: #fff;
+}
+
+#menu-itens{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    list-style: none;
+}
+
+li{
+    padding: 26px 10px;
+    width: 100%;
+    text-align: center;
+
+    transition: .6s;
+}
+
+li:hover{
+    background-color: #fff;
+    color: #7e7e7e;
+}
+
+a{
+    width: auto;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    text-decoration: none;
+    color: currentColor;
+}
+
+
+#conjunto_btn-mobile{
+    display: none;
+}
+
 main{
-    height: 80vh;
-    margin: 5vh;
+    height: 85vh;
+    margin: 2vh;
     display: flex;
 
 }
