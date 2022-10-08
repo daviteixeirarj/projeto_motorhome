@@ -170,11 +170,7 @@ input{
     border: none;
     outline: none;
     border-bottom: 0.5px solid #fff;
-    font-size: 2vw;
-}
-
-input:focus{
-    border: none;
+    font-size: max(17px, 2vw);
 }
 
 #submit{
